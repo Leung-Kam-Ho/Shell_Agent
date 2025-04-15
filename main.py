@@ -43,7 +43,7 @@ provider = OpenAIProvider(
     api_key="LMSTUDIO",
 )
 model = OpenAIModel(
-    model_name="qwen2.5-14b-instruct-1m",
+    model_name=os.getenv("LM_STUDIO_MODEL"),
     provider=provider,
 )
 
